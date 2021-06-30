@@ -1,0 +1,75 @@
+//Variables Color Scheme
+
+// Variables First Color Scheme
+$white: #FFF;
+$platinum: #E6E7E7;
+$light-gray: #D1D1D1;
+
+//Variables Second Color Scheme
+$fuzzy-wuzzy: #E56353;
+$ruddy-pink: #D76C69;
+$spanish-pink: #ECBCBA;
+
+//Variables Third Color Scheme
+$eerie-bolack: #121619;
+$raisin-black: #222323;
+$nickel: #6C6E70;
+
+//Variables Font Family
+$playfair: 'Playfair Display',
+serif;
+$roboto: 'Roboto',
+sans-serif;
+
+//Varibles Font Sizes
+$xx-large: 70px;
+$x-large: 30px;
+$large: 18px;
+$medium: 16px;
+$small: 12px;
+
+//Variables Font Weight
+$fweight-regular: 300;
+$fweight-light: 400;
+$fweight-black: 900;
+
+//Font style
+$regular: normal;
+$italic: italic;
+
+//Device variables
+$map-breakpoints: ('device-small': (min-width: 575.98px),
+  'device-medium': (min-width: 767.98px),
+  'device-large': (min-width: 991.98px),
+  'device-xlarge': (min-width: 1199.98px),
+);
+
+///////////////////////
+//Variables Boostrap//
+//line-70 - redefine color
+$primary: $eerie-bolack;
+//line-71 - redefine color 
+$secondary:$light-gray;
+//line-72 redefine color
+$success: $nickel;
+//line-77 - redefinecolor 
+$dark:$eerie-bolack;
+
+//line-452
+$font-sizes: (1: $xx-large,
+  2: $x-large,
+  3: $large,
+  4: $medium,
+  5: $small,
+  6: $small);
+
+//line-992
+$navbar-dark-hover-color:$ruddy-pink;
+
+$navbar-dark-active-color:$fuzzy-wuzzy;
+
+//line-936 - redefino color de la hamburgesa
+//$navbar-dark-color: rgba($my-white, 1);
+
+//line-968 - redefino el borde del boton con opacidad 0 para quitar el color blanco
+//$navbar-dark-toggler-border-color: rgba($my-white, 0)
