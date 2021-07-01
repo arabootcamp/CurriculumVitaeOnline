@@ -5,9 +5,6 @@ $black:#071013;
 $purple:#2D3047;
 $green:#7CEA9C;
 
-$platinum: #E6E7E7;
-$light-gray: #D1D1D1;
-
 //Varibles Font Family
 $lato: 'Lato',
 sans-serif;
@@ -33,8 +30,6 @@ $map-breakpoints: ('device-xsmall': (min-width: 360px),
 ///////////////////////
 //Variables Boostrap//
 //$primary: $white;
-$secondary: $black;
-$success: $purple;
-$info: $green;
-
-$btn-hover-bg-tint-amount: 50%;
+$success: $green;
+$info: $purple;
+$dark:$black;

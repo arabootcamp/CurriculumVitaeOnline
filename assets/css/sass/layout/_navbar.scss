@@ -10,11 +10,14 @@
   }
 }
 
-
 .navbar-custom {
-  position: relative;
-
   &__fixed {
     position: fixed;
+  }
+}
+
+a {
+  &:hover {
+    color: white !important;
   }
 }

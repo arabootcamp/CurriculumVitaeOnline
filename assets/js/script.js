@@ -35,15 +35,16 @@ $(function () {
     }
   });
 
+  // Add smooth scrolling to all links
+  $("a").on('click', function (event) {
+    event.preventDefault();
+    let hash = this.hash;
+    let delta = 110;
+    if ($(window).width() >= large)
+      delta = 50;
 
-  //scroll
-  $(window).scroll(function () {
-    console.log("scroll");
-    if ($(window).width() >= large) {
-      if ($(window).scrollTop() > 54)
-        $('.navbar__lg').removeClass('pt-lg-5');
-      else
-        $('.navbar__lg').addClass('pt-lg-5');
-    }
+    $('html, body').animate({
+      scrollTop: $($.attr(this, 'href')).offset().top - delta
+    }, 500);
   });
 });
