@@ -1,0 +1,19 @@
+.navbar-custom{
+  &__img{
+    width: 70px;
+    height:70px;
+
+    &--lg{
+      width: 150px;
+      height: 150px;
+    }
+  }
+}
+
+.navbar-custom{
+  position: relative;
+
+  &__fixed{
+    position: fixed;
+  }
+}

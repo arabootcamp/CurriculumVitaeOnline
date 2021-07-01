@@ -11,9 +11,9 @@
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
   <link rel="stylesheet" href="assets/css/style.css">
   <!--Google Fonts-->
-
-
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
   <!--My CSS-->
   <link rel="stylesheet" href="assets/css/style.css">
   <!--JQuery 3.6.0-->
@@ -22,131 +22,175 @@
 </head>
 
 <body>
-
-
-  <div class="container">
-    <div class="row row-cols-1 row-cols-lg-2">
-      <div class="col">
+  <div class="container-fluid px-0 container-xxl">
+    <div class="row">
+      <div id="navbar-col"class="col-12 col-lg-3">
         <!--Navbar-->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-              aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
-                </li>
-              </ul>
+        <nav class="navbar-custom h-100 bg-info py-xl-5">
+          <!--Navbar small devices-->
+          <div class="navbar navbar-expand-lg navbar-light bg-info d-lg-none">
+            <div class="container-fluid">
+              <div class="navbar-brand">
+                <img class="navbar-custom__img rounded-circle" src="assets/img/avatar.png" alt="img avatar">
+              </div>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-success text-uppercase fw-bold">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#acerca-de-mi">acerca de mi</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#xperiencia">experiencia</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#educacion">educación</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#habilidades">habilidades</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contacto">contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!--Navbar large device -->
+          <div class="navbar-custom__fixed">
+            <div class="navbar__lg d-none d-lg-block text-center pt-lg-5">
+              <img class="navbar-custom__img navbar-custom__img--lg rounded-circle" src="assets/img/avatar.png" alt="img avatar">
+              <a class="nav-link active text-success text-uppercase fw-bold" aria-current="page"
+                href="#acerca-de-mi">acerca de mi</a>
+              <a class="nav-link text-success text-uppercase fw-bold" href="#xperiencia">experiencia</a>
+              <a class="nav-link text-success text-uppercase fw-bold" href="#educacion">educación</a>
+              <a class="nav-link text-success text-uppercase fw-bold" href="#habilidades">habilidades</a>
+              <a class="nav-link text-success text-uppercase fw-bold" href="#contacto">contacto</a>
             </div>
           </div>
         </nav>
         <!--Fin Navbar-->
       </div>
-      <div class="col">
-        <div class="Acerca-de-Mi">
-          <h1>Vanessa Galleguilllos</h1>
-          <p>Calle siempre viva 1857 | +569 12345678 vanegalleguillos@mail.com</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et dignissimos, enim ut, iusto minus neque
+      <!-- Details CV-->
+      <div class="col-12 col-lg-9 py-xl-5">
+        <!--About Me-->
+        <div id="acerca-de-mi" class="about-me container my-5 mt-lg-0 pt-xl-5">
+          <h1 class="about-me__title text-uppercase fw-title">Vanessa Galleguilllos</h1>
+          <p class="about-me__p text-uppercase d-flex flex-column d-sm-block">
+            <span>Calle siempre viva 1857</span>
+            <span class="d-none d-sm-inline"> | </span>
+            <span>+569 12345678 </span>
+            <span class="d-none d-sm-inline"> | </span>
+            <span class="text-lowercase">vanegalleguillos@mail.com</span>
+          </p>
+          <p class="about-me__p  text-secondary fw-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et
+            dignissimos, enim ut,
+            iusto minus
+            neque
             maiores alias suscipit qui beatae mollitia aperiam nihil quas iste! Quaerat veritatis, qui molestiae quod
             dolores repellendus aperiam.</p>
-          <i class="fab fa-github-square"></i>
-          <i class="fab fa-facebook-square"></i>
-          <i class="fab fa-twitter-square"></i>
+          <i class="about-me__i fab fa-github-square fa-2x"></i>
+          <i class="about-me__i fab fa-facebook-square fa-2x"></i>
+          <i class="about-me__i fab fa-twitter-square fa-2x"></i>
         </div>
-        <div class="experiencia">
-          <h2>experiencia</h2>
-          <div class="experiencia__item">
-            <div class="group">
+        <!--Experience-->
+        <div id="experiencia" class="experience container my-5">
+          <h2 class="experience__title text-uppercase fw-title">experiencia</h2>
+          <div class="experience__item">
+            <div class="group d-flex flex-column flex-sm-row justify-content-sm-between">
               <div class="group__left">
-                <h3>desafio latam</h3>
-                <p>Front-End Developer</p>
+                <h5 class="experience__sub-title text-uppercase fw-bold mb-0">desafio latam</h5>
+                <p class="experience__p mb-0">Front-end Developer</p>
               </div>
               <p>2017-2018</p>
             </div>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio ab itaque quisquam eius, ut libero
+            <p class="experience__p text-secondary fw-light">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Distinctio ab itaque quisquam eius, ut libero
               recusandae temporibus nihil ipsum, atque cum quas, in accusantium! Fugiat asperiores numquam earum
               mollitia excepturi.</p>
           </div>
-          <div class="experiencia__item">
-            <div class="group">
+          <div class="experience__item">
+            <div class="group d-flex flex-column flex-sm-row justify-content-sm-between">
               <div class="group__left">
-                <h3>retailadd</h3>
-                <p>UI/X Designer</p>
+                <h5 class="experience__sub-title text-uppercase fw-bold mb-0">retailadd</h5>
+                <p class="experience__p mb-0">UI/X Designer</p>
               </div>
               <p>2015-2017</p>
             </div>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio ab itaque quisquam eius, ut libero
+            <p class="experience__p text-secondary fw-light">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Distinctio ab itaque quisquam eius, ut libero
               recusandae temporibus nihil ipsum, atque cum quas, in accusantium! Fugiat asperiores numquam earum
               mollitia excepturi.</p>
           </div>
-          <div class="experiencia__item">
-            <div class="group">
+          <div class="experience__item">
+            <div class="group d-flex flex-column flex-sm-row justify-content-sm-between">
               <div class="group__left">
-                <h3>cafeteria haippe</h3>
-                <p>Barista</p>
+                <h5 class="experience__sub-title text-uppercase fw-bold mb-0">cafeteria haippe</h5>
+                <p class="experience__p mb-0">Barista</p>
               </div>
               <p>2013-2015</p>
             </div>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio ab itaque quisquam eius, ut libero
+            <p class="experience__p text-secondary fw-light">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Distinctio ab itaque quisquam eius, ut libero
               recusandae temporibus nihil ipsum, atque cum quas, in accusantium! Fugiat asperiores numquam earum
               mollitia excepturi.</p>
           </div>
         </div>
-        <div class="educacion">
-          <h2>educacion</h2>
-          <div class="eduacion__item">
-            <div class="group">
+        <!--Education-->
+        <div id="educacion" class="education container my-5">
+          <h2 class="education__title text-uppercase fw-title">educacion</h2>
+          <div class="eduation__item">
+            <div class="group d-flex flex-column flex-sm-row justify-content-sm-between">
               <div class="group__left">
-                <h3>desafío latam</h3>
-                <p>Front-end</p>
+                <h5 class="education__sub-title text-uppercase fw-bold mb-0">desafío latam</h5>
+                <p class="education__p mb-0 text-secondary fw-light">Front-end</p>
               </div>
               <p>2017</p>
             </div>
           </div>
-          <div class="eduacion__item">
-            <div class="group">
+          <div class="eduation__item">
+            <div class="group d-flex flex-column flex-sm-row justify-content-sm-between">
               <div class="group__left">
-                <h3>ux/ui online university</h3>
-                <p>ux/ui</p>
+                <h5 class="education__sub-title text-uppercase fw-bold mb-0">ux/ui online university</h5>
+                <p class="education__p mb-0 text-secondary fw-light">ux/ui</p>
               </div>
               <p>2015-2016</p>
             </div>
           </div>
-          <div class="eduacion__item">
-            <div class="group">
+          <div class="eduation__item">
+            <div class="group d-flex flex-column flex-sm-row justify-content-sm-between">
               <div class="group__left">
-                <h3>uddla</h3>
-                <p>Diseñador gráfico</p>
+                <h5 class="education__sub-title text-uppercase fw-bold mb-0">uddla</h5>
+                <p class="education__p mb-0 text-secondary fw-light">Diseñador gráfico</p>
               </div>
               <p>2010-2015</p>
             </div>
           </div>
         </div>
-        <div class="habilidades">
-          <h2>habilidades</h2>
-          <div class="habilidades__item">
-            <h2>lenguajes de programación</h2>
-            <p>Javascript, PHP</p>
+        <!--Skills-->
+        <div id="habilidades" class="skills container my-5">
+          <h2 class="skills__title text-uppercase fw-title">habilidades</h2>
+          <div class="skills__item">
+            <h5 class="skills__sub-title text-uppercase fw-title">lenguajes de programación</h5>
+            <p class="skills__p text-secondary fw-light">Javascript, PHP</p>
           </div>
-          <div class="habilidades__item">
-            <h2>herramientas</h2>
-            <p>Worrdpress, JQuery, Bootstrap, Photoshop, Sketch, Ilustrator</p>
+          <div class="skills__item">
+            <h5 class="skills__sub-title text-uppercase fw-title">herramientas</h5>
+            <p class="skills__p text-secondary fw-light">Worrdpress, JQuery, Bootstrap, Photoshop, Sketch, Ilustrator
+            </p>
           </div>
         </div>
-        <div class="contacto">
-          <h2>contacto</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, explicabo corrupti! Sit id perspiciatis a?
+        <!--Contact-->
+        <div id="contacto" class="contact container my-5 mb-lg-0 pb-xl-5">
+          <h2 class="contact__title text-uppercase fw-title">contacto</h2>
+          <p class="contact__p text-secondary fw-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum,
+            explicabo corrupti! Sit id
+            perspiciatis a?
             Quos excepturi distinctio iusto totam?</p>
-
-          <form>
+          <form class="contact__form text-secondary">
             <div class="mb-3">
               <label for="exampleInputName" class="form-label">Nombre</label>
               <input type="email" class="form-control" id="exampleInputName" aria-describedby="emailHelp"
@@ -159,12 +203,14 @@
             </div>
             <div class="mb-3">
               <label for="exampleInputMje" class="form-label">Mensaje</label>
-              <textarea class="form-control" placeholder="Escribe tu mensaje" id="exampleInputMje"></textarea>
+              <textarea class="form-control" rows="5" placeholder="Escribe tu mensaje" id="exampleInputMje"></textarea>
             </div>
-            <button type="submit" class="btn btn-primary">Enviar</button>
+            <div class="group text-center text-success">
+              <button type="submit" class="btn btn-outline-success">Enviar</button>
+            </div>
           </form>
-
         </div>
+
       </div>
     </div>
   </div>

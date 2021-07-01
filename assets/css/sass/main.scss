@@ -6,9 +6,11 @@
 //vendors
 @import 'vendors/bootstrap/bootstrap';
 //base
+@import 'base/reset';
+@import 'base/base';
+@import 'base/typography';
 //layout
+@import 'layout/navbar';
 //components
 //pages
 //themes
-
-
