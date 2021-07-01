@@ -10742,6 +10742,16 @@ html {
   -moz-box-sizing: inherit;
   box-sizing: inherit;
   margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
 }
 
 img {

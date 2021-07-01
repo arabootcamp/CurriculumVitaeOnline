@@ -1,19 +1,20 @@
-.navbar-custom{
-  &__img{
+.navbar-custom {
+  &__img {
     width: 70px;
-    height:70px;
+    height: 70px;
 
-    &--lg{
+    &--lg {
       width: 150px;
       height: 150px;
     }
   }
 }
 
-.navbar-custom{
+
+.navbar-custom {
   position: relative;
 
-  &__fixed{
+  &__fixed {
     position: fixed;
   }
 }
